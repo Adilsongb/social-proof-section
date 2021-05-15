@@ -1,14 +1,11 @@
-html {
 
+html {
     height: 100%;
     min-height: 100%;
-
 }
 
 body {
 
-    height: 100%;
-    min-height: 100%;
     padding: 0;
     margin: 0;
     font-family: 'Spartan', sans-serif;
@@ -17,17 +14,15 @@ body {
     background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat;
     background-position: top left, right bottom;
-    background-size: 45%, 75%;
+    background-size: 700px, 1400px;
     
 }
 
 #container-body {
 
-    width: 70%;
-    height: 100%;
+    width: 80%;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
+    margin-top: 160px;
     
 }
 
@@ -43,7 +38,7 @@ body {
 
 .title-text {
 
-    width: 60%;
+    width: 850px;
 
 }
 
@@ -59,36 +54,53 @@ body {
 
     margin: 0;
     color: hsl(300, 43%, 22%);
-    font-size: 50px;
-    font-size: 700;
+    font-size: 55px;
+    line-height: 1.0;
 
 }
 
 .title-text p {
 
     color: hsl(303, 10%, 53%);
+    font-size: 18px;
     font-weight: 500;
+    line-height: 1.8;
 
 }
 
 .cont-star {
 
     background-color: hsl(300, 24%, 96%);
-    padding: 20px 30px;
+    padding: 20px 40px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    font-weight: 700;
-    color: hsl(300, 43%, 22%);
     border-radius: 10px;
     width: 60%;
     float: right;
 
 }
 
+.cont-star span {
+
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(300, 43%, 22%);
+    position: relative;
+    bottom: 1px;
+
+}
+
 .stars {
 
     display: inline-block;
-    margin-right: 40px;
+    margin-right: 35px;
+
+}
+
+.stars img {
+
+    width: 20px;
+    margin-right: 5px;
 
 }
 
@@ -116,13 +128,13 @@ body {
 .container-comment {
 
     background-color: hsl(300, 43%, 22%);
-    width: 32%;
-    height: 280px;
+    width: 31.5%;
+    height: 300px;
     border-radius: 10px;
-    padding: 40px;
+    padding: 50px;
     box-sizing: border-box;
     color: hsl(0, 0%, 100%);
-    font-size: 15px;
+    font-size: 16px;
 
 }
 
@@ -141,7 +153,7 @@ body {
 .title-card img {
 
     border-radius: 50%;
-    width: 14%;
+    width: 50px;
     
 }
 
@@ -162,7 +174,7 @@ body {
 .title-card .title-span {
     
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 5px;
 
 }
@@ -170,13 +182,231 @@ body {
 .title-card .sub-span {
     
     color: hsl(333, 80%, 67%);
-    font-size: 15px;
+    font-size: 16px;
 
 }
 
 .container-comment p {
 
-    font-weight: 500;
+    font-weight: 450;
     line-height: 1.8;
+
+}
+
+/***** CONFIG RESPONSIVE *****/
+
+/* 1680px */
+
+@media only screen and (max-width: 1680px) {
+
+    body {
+
+        background-size: 650px, 1100px;
+        
+    }
+
+    .title-text {
+
+        width: 1100px;
+    
+    }
+
+    .title-text h1 {
+
+        font-size: 50px;
+    
+    }
+
+    .title-text p {
+    
+        font-size: 16px;
+    
+    }
+
+    .cont-star {
+
+        width: 75%;
+    
+    }
+
+    .cont-star span {
+
+        font-size: 14px;
+    
+    }
+
+    .container-comment {
+
+        padding: 40px;
+        font-size: 12.5px;
+        font-weight: 500;
+        height: 240px;
+    
+    }
+
+    .title-card .title-span {
+    
+        font-size: 13px;
+    
+    }
+    
+    .title-card .sub-span {
+        
+        font-size: 13px;
+    
+    }
+
+    .title-card img {
+
+        width: 40px;
+        
+    }
+    
+    
+}
+
+
+/* 1024px */
+
+@media only screen and (max-width: 1024px) {
+
+    body {
+
+        background-size: 650px, 800px;
+        
+    }
+    
+    #container-body {
+
+        width: 60%;
+        display: block;
+        margin-top: 120px;
+        
+    }
+
+    #container-conteudo {
+
+        padding-bottom: 60px;
+
+    }
+
+    .title-text h1 {
+
+        font-size: 30px;
+    
+    }
+
+    #section {
+
+        display: block;
+    
+    }
+
+    .title-text {
+
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    
+    }
+
+    .cont-star {
+
+        float: none;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+    
+    }
+
+    .stars-class {
+
+        width: 100%;
+
+    }
+
+    .stars {
+        display: block;
+        margin: 0px 0px 10px 0px;
+    }
+
+    .comments {
+
+        margin-top: 40px;
+        display: block;
+    
+    }
+
+    .container-comment {
+
+        width: 100%;
+        font-size: 13px;
+        padding: 30px;
+        height: auto;
+        max-height: 280px;
+    
+    }
+
+    .comment_2, .comment_3  {
+
+        margin-top: 15px;
+    
+    }
+
+    .title-card img {
+
+        width: 40px;
+        
+    }
+
+    .title-card .title-span {
+    
+        font-size: 13px;
+    
+    }
+    
+    .title-card .sub-span {
+        
+        font-size: 13px;
+    
+    }
+
+}
+
+/* 425px */
+
+@media only screen and (max-width: 425px){
+
+    body {
+
+        background-size: 600px, 800px;
+        
+    }
+
+    .title-text p {
+    
+        font-size: 14px;
+    
+    }
+
+    #container-body {
+
+        width: 85%;
+        margin-top: 80px;
+
+    }
+
+}
+
+/* 375px */
+
+
+@media only screen and (max-width: 375px){
+    
+    body {
+
+        background-size: 370px;
+        
+    }
 
 }

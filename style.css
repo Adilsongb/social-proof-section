@@ -14,7 +14,7 @@ body {
     background-image: url(images/bg-pattern-top-desktop.svg), url(images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat;
     background-position: top left, right bottom;
-    background-size: 700px, 1400px;
+    background-size: 680px, 1400px;
     
 }
 
@@ -22,7 +22,7 @@ body {
 
     width: 80%;
     margin: 0 auto;
-    margin-top: 160px;
+    margin-top: 140px;
     
 }
 
